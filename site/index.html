@@ -2,8 +2,27 @@
   <head>
     <title>MyList - BackboneJS</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+
+    <section id="todoapp">
+      <header id="todos">
+        <h1>todos</h1>
+        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+      </header>
+      <section id="main">
+        <input id="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list"></ul>
+      </section>
+      <footer id="footer"></footer>
+    </section>
+    <div id="info">
+      <p>Double click to edit a todo</p>
+      <p>Written by <a href>Addy Osmani</a></p>
+    </div>
+
     <script type="text/template" id="item-template"></script>
     <script type="text/template" id="stats-template"></script>
 
